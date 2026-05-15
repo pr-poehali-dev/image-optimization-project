@@ -29,7 +29,7 @@ export default function Promo() {
       </div>
 
       <h3 className="absolute top-12 right-6 text-amber-400/70 uppercase z-10 text-xs tracking-[0.3em]">
-        Сезон 2024–2025
+        Сезон 2026–2027
       </h3>
 
       <p className="absolute bottom-12 right-6 text-white text-xl sm:text-2xl md:text-3xl lg:text-4xl xl:text-5xl max-w-xs sm:max-w-md md:max-w-lg lg:max-w-xl xl:max-w-3xl z-10 font-light leading-tight">
