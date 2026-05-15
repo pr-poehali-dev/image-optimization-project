@@ -8,6 +8,11 @@ export default function Featured() {
           className="w-full h-full object-cover object-top"
         />
         <div className="absolute inset-0 bg-gradient-to-l from-transparent to-black/60" />
+        <div className="absolute bottom-0 left-0 right-0 px-6 py-4 bg-gradient-to-t from-black/80 to-transparent">
+          <p className="text-white/70 uppercase text-xs tracking-[0.25em] text-center">
+            Художественный руководитель А.В. Балашов
+          </p>
+        </div>
       </div>
       <div className="flex-1 text-left lg:h-[800px] flex flex-col justify-center lg:mr-12 lg:order-1">
         <h3 className="uppercase mb-4 text-xs tracking-[0.3em] text-amber-400/80">О мастерской</h3>
