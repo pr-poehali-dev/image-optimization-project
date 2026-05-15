@@ -3,12 +3,11 @@ export default function Featured() {
     <div id="about" className="flex flex-col lg:flex-row lg:justify-between lg:items-center min-h-screen px-6 py-12 lg:py-0 bg-black">
       <div className="flex-1 h-[400px] lg:h-[800px] mb-8 lg:mb-0 lg:order-2 relative overflow-hidden">
         <img
-          src="/images/mountain-landscape.jpg"
-          alt="Театральная постановка"
-          className="w-full h-full object-cover opacity-70"
-          style={{ filter: "sepia(30%) contrast(1.1)" }}
+          src="https://cdn.poehali.dev/projects/f49bde08-f9de-438a-b455-a2f7ec7f0f1f/bucket/54d25be3-de13-4d6b-9ad6-7863f6e95c87.jpg"
+          alt="Александр Валерьевич Балашов"
+          className="w-full h-full object-cover object-top"
         />
-        <div className="absolute inset-0 bg-gradient-to-l from-transparent to-black/50" />
+        <div className="absolute inset-0 bg-gradient-to-l from-transparent to-black/60" />
       </div>
       <div className="flex-1 text-left lg:h-[800px] flex flex-col justify-center lg:mr-12 lg:order-1">
         <h3 className="uppercase mb-4 text-xs tracking-[0.3em] text-amber-400/80">О мастерской</h3>
