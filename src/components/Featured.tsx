@@ -1,21 +1,25 @@
 export default function Featured() {
   return (
-    <div className="flex flex-col lg:flex-row lg:justify-between lg:items-center min-h-screen px-6 py-12 lg:py-0 bg-white">
-      <div className="flex-1 h-[400px] lg:h-[800px] mb-8 lg:mb-0 lg:order-2">
+    <div id="about" className="flex flex-col lg:flex-row lg:justify-between lg:items-center min-h-screen px-6 py-12 lg:py-0 bg-black">
+      <div className="flex-1 h-[400px] lg:h-[800px] mb-8 lg:mb-0 lg:order-2 relative overflow-hidden">
         <img
-          src="/images/woman-horse.jpg"
-          alt="Woman on horse in countryside"
-          className="w-full h-full object-cover"
+          src="/images/mountain-landscape.jpg"
+          alt="Театральная постановка"
+          className="w-full h-full object-cover opacity-70"
+          style={{ filter: "sepia(30%) contrast(1.1)" }}
         />
+        <div className="absolute inset-0 bg-gradient-to-l from-transparent to-black/50" />
       </div>
       <div className="flex-1 text-left lg:h-[800px] flex flex-col justify-center lg:mr-12 lg:order-1">
-        <h3 className="uppercase mb-4 text-sm tracking-wide text-neutral-600">Функции, которые не стоят на месте</h3>
-        <p className="text-2xl lg:text-4xl mb-8 text-neutral-900 leading-tight">
-          Не просто список возможностей — живые, дышащие акценты. Каждая функция адаптируется к движению, контексту и настроению,
-          оживляя продукт с первого взгляда.
+        <h3 className="uppercase mb-4 text-xs tracking-[0.3em] text-amber-400/80">О мастерской</h3>
+        <p className="text-2xl lg:text-4xl mb-8 text-white leading-tight font-light">
+          Место, где рождается искусство. Каждая постановка — живое дыхание сцены, история, рассказанная всем телом, голосом и душой.
         </p>
-        <button className="bg-black text-white border border-black px-4 py-2 text-sm transition-all duration-300 hover:bg-white hover:text-black cursor-pointer w-fit uppercase tracking-wide">
-          Подробнее
+        <p className="text-neutral-400 text-base mb-10 leading-relaxed max-w-lg">
+          Молодёжный театр «Творческая Мастерская» под руководством Александра Валерьевича Балашова — пространство для смелых идей, профессионального роста и настоящего театрального искусства.
+        </p>
+        <button className="bg-transparent text-white border border-white/30 hover:border-amber-400 hover:text-amber-400 px-6 py-3 text-xs transition-all duration-300 cursor-pointer w-fit uppercase tracking-[0.2em]">
+          Репертуар
         </button>
       </div>
     </div>

@@ -97,6 +97,101 @@
 
   body {
     @apply bg-background text-foreground;
-    font-family: 'Montserrat', system-ui, -apple-system, BlinkMacSystemFont, sans-serif;
+    font-family:
+      "Montserrat",
+      system-ui,
+      -apple-system,
+      BlinkMacSystemFont,
+      sans-serif;
+    background-color: #000;
   }
+}
+
+/* ===== LOGO EFFECTS ===== */
+@keyframes logoGlow {
+  0%,
+  100% {
+    filter: brightness(1) drop-shadow(0 0 12px rgba(255, 220, 100, 0.5))
+      drop-shadow(0 0 30px rgba(255, 180, 50, 0.3))
+      drop-shadow(0 0 60px rgba(200, 120, 20, 0.2));
+  }
+  33% {
+    filter: brightness(1.15) drop-shadow(0 0 20px rgba(255, 255, 200, 0.7))
+      drop-shadow(0 0 50px rgba(255, 220, 100, 0.5))
+      drop-shadow(0 0 90px rgba(255, 160, 40, 0.3));
+  }
+  66% {
+    filter: brightness(1.05) drop-shadow(0 0 16px rgba(200, 230, 255, 0.5))
+      drop-shadow(0 0 40px rgba(150, 200, 255, 0.35))
+      drop-shadow(0 0 70px rgba(100, 150, 255, 0.2));
+  }
+}
+
+@keyframes shimmer {
+  0% {
+    background-position: -200% center;
+  }
+  100% {
+    background-position: 200% center;
+  }
+}
+
+@keyframes logoPulse {
+  0%,
+  100% {
+    transform: scale(1);
+  }
+  50% {
+    transform: scale(1.015);
+  }
+}
+
+.logo-wrapper {
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.logo-wrapper::before {
+  content: "";
+  position: absolute;
+  inset: -20px;
+  background: radial-gradient(
+    ellipse at center,
+    rgba(255, 200, 80, 0.15) 0%,
+    rgba(255, 150, 30, 0.08) 40%,
+    transparent 70%
+  );
+  animation: logoGlow 4s ease-in-out infinite;
+  border-radius: 50%;
+  pointer-events: none;
+}
+
+.logo-image {
+  width: clamp(180px, 35vw, 340px);
+  height: clamp(180px, 35vw, 340px);
+  object-fit: contain;
+  animation:
+    logoGlow 3.5s ease-in-out infinite,
+    logoPulse 5s ease-in-out infinite;
+  position: relative;
+  z-index: 1;
+}
+
+/* Footer big title gradient */
+.footer-title-gradient {
+  background: linear-gradient(
+    90deg,
+    #ffffff 0%,
+    #ffd580 25%,
+    #ffffff 50%,
+    #c8a0ff 75%,
+    #ffffff 100%
+  );
+  background-size: 200% auto;
+  -webkit-background-clip: text;
+  background-clip: text;
+  -webkit-text-fill-color: transparent;
+  animation: shimmer 6s linear infinite;
 }
