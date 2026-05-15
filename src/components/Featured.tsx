@@ -5,7 +5,7 @@ export default function Featured() {
         <img
           src="https://cdn.poehali.dev/projects/f49bde08-f9de-438a-b455-a2f7ec7f0f1f/bucket/54d25be3-de13-4d6b-9ad6-7863f6e95c87.jpg"
           alt="Александр Валерьевич Балашов"
-          className="w-full h-full object-cover object-top"
+          className="w-full h-full object-cover object-center" style={{ objectPosition: "center 20%", transform: "scale(0.85)", transformOrigin: "center center" }}
         />
         <div className="absolute inset-0 bg-gradient-to-l from-transparent to-black/60" />
         <div className="absolute bottom-0 left-0 right-0 px-6 py-4 bg-gradient-to-t from-black/80 to-transparent">
