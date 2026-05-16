@@ -14,6 +14,21 @@ const photos = [
     alt: "Актёры на сцене",
     caption: "Живое слово",
   },
+  {
+    src: "https://cdn.poehali.dev/projects/f49bde08-f9de-438a-b455-a2f7ec7f0f1f/files/c75ffa32-d7f5-408b-b211-4f2f6b3e5c9b.jpg",
+    alt: "Монолог актёра",
+    caption: "Монолог",
+  },
+  {
+    src: "https://cdn.poehali.dev/projects/f49bde08-f9de-438a-b455-a2f7ec7f0f1f/files/b618a8b7-bc34-4f16-b7a1-76fc039ab84e.jpg",
+    alt: "Поклон труппы",
+    caption: "Поклон",
+  },
+  {
+    src: "https://cdn.poehali.dev/projects/f49bde08-f9de-438a-b455-a2f7ec7f0f1f/files/6029beec-d283-44ae-96b6-8cb462074a6c.jpg",
+    alt: "Дуэт актёров",
+    caption: "Дуэт",
+  },
 ];
 
 export default function Gallery() {
@@ -45,6 +60,45 @@ export default function Gallery() {
               </div>
             </div>
           ))}
+        </div>
+
+        <div className="mt-24 text-center relative">
+          <div className="absolute inset-0 flex items-center justify-center pointer-events-none">
+            <div className="w-full h-px bg-gradient-to-r from-transparent via-amber-400/20 to-transparent" />
+          </div>
+          <div className="relative inline-block px-12">
+            <p className="text-amber-400/60 uppercase text-xs tracking-[0.5em] mb-6">Мы здесь</p>
+            <p
+              className="text-white/20 uppercase text-xs tracking-[0.4em] mb-3"
+              style={{ fontFamily: "serif" }}
+            >
+              ✦ ✦ ✦
+            </p>
+            <h3
+              className="text-white text-3xl md:text-5xl lg:text-6xl font-light leading-tight"
+              style={{
+                fontFamily: "serif",
+                textShadow: "0 0 60px rgba(180,100,30,0.3)",
+                letterSpacing: "0.05em",
+              }}
+            >
+              Ждём вас по адресу
+            </h3>
+            <div className="flex items-center justify-center gap-4 mt-4 mb-4">
+              <div className="h-px w-16 bg-amber-400/40" />
+              <div className="w-1 h-1 rounded-full bg-amber-400/60" />
+              <div className="h-px w-16 bg-amber-400/40" />
+            </div>
+            <p
+              className="text-amber-300 text-4xl md:text-6xl lg:text-7xl font-bold uppercase tracking-widest"
+              style={{
+                fontFamily: "serif",
+                textShadow: "0 0 40px rgba(192,100,30,0.5), 0 2px 0 rgba(0,0,0,0.8)",
+              }}
+            >
+              Совхозная, 25
+            </p>
+          </div>
         </div>
       </div>
     </section>
