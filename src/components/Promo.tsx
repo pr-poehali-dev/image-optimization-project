@@ -4,6 +4,11 @@ const actors = [
   { name: "Виноградов Прохор", photo: "https://cdn.poehali.dev/projects/f49bde08-f9de-438a-b455-a2f7ec7f0f1f/bucket/9629c686-b44c-45a1-8140-0822f7b945b7.jpg" },
   { name: "Скрябин Андрей", photo: "https://cdn.poehali.dev/projects/f49bde08-f9de-438a-b455-a2f7ec7f0f1f/bucket/bc306ea1-ebcf-4203-9972-637912f66687.jpg" },
   { name: "Анастасия Рогова", photo: "https://cdn.poehali.dev/projects/f49bde08-f9de-438a-b455-a2f7ec7f0f1f/bucket/a187552e-19f0-4923-9413-01f49c9bbf64.jpg" },
+  { name: "Варвара Ивановна", photo: "https://cdn.poehali.dev/projects/f49bde08-f9de-438a-b455-a2f7ec7f0f1f/bucket/2b302df7-4e1f-472e-97c7-3c0d7524214b.jpg" },
+  { name: "Владислава Дреер", photo: "https://cdn.poehali.dev/projects/f49bde08-f9de-438a-b455-a2f7ec7f0f1f/bucket/cac493ab-04ed-4181-b806-b4fd1da42c2d.jpg" },
+  { name: "Савелий Виноградов", photo: "https://cdn.poehali.dev/projects/f49bde08-f9de-438a-b455-a2f7ec7f0f1f/bucket/8c2803cb-b8d3-4613-9d07-1a3ee5cebc06.jpg" },
+  { name: "Златослава Сотникова", photo: "https://cdn.poehali.dev/projects/f49bde08-f9de-438a-b455-a2f7ec7f0f1f/bucket/7c0d2d54-f23b-4824-a269-0563119713e4.jpg" },
+  { name: "Виктория Ярошева", photo: "https://cdn.poehali.dev/projects/f49bde08-f9de-438a-b455-a2f7ec7f0f1f/bucket/2535e815-b05e-48a4-a248-3549525d485c.jpg" },
 ];
 
 export default function Promo() {
