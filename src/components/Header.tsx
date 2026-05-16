@@ -12,6 +12,9 @@ export default function Header({ className }: { className?: string }) {
           <a href="#repertoire" className="text-white hover:text-amber-300 transition-colors duration-300 uppercase text-xs tracking-widest">
             Репертуар
           </a>
+          <a href="#troupe" className="text-white hover:text-amber-300 transition-colors duration-300 uppercase text-xs tracking-widest">
+            Труппа
+          </a>
           <a href="#contact" className="text-white hover:text-amber-300 transition-colors duration-300 uppercase text-xs tracking-widest">
             Контакты
           </a>
