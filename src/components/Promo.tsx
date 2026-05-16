@@ -1,31 +1,18 @@
-import { useScroll, useTransform, motion } from "framer-motion";
-import { useRef } from "react";
-
 export default function Promo() {
-  const container = useRef<HTMLDivElement>(null);
-  const { scrollYProgress } = useScroll({
-    target: container,
-    offset: ["start end", "end start"],
-  });
-  const y = useTransform(scrollYProgress, [0, 1], ["-10vh", "10vh"]);
-
   return (
     <div
-      ref={container}
       id="repertoire"
       className="relative flex items-center justify-center h-screen overflow-hidden"
       style={{ clipPath: "polygon(0% 0, 100% 0%, 100% 100%, 0 100%)" }}
     >
-      <div className="fixed top-[-10vh] left-0 h-[120vh] w-full">
-        <motion.div style={{ y }} className="relative w-full h-full">
-          <img
-            src="/images/spiral-circles.jpg"
-            alt="Абстрактная графика"
-            className="w-full h-full object-cover"
-            style={{ filter: "brightness(0.25) hue-rotate(30deg)" }}
-          />
-          <div className="absolute inset-0 bg-black/40" />
-        </motion.div>
+      <div className="absolute inset-0 w-full h-full">
+        <img
+          src="/images/spiral-circles.jpg"
+          alt="Абстрактная графика"
+          className="w-full h-full object-cover"
+          style={{ filter: "brightness(0.25) hue-rotate(30deg)" }}
+        />
+        <div className="absolute inset-0 bg-black/40" />
       </div>
 
       <h3 className="absolute top-12 right-6 text-amber-400/70 uppercase z-10 text-xs tracking-[0.3em]">
