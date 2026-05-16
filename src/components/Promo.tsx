@@ -9,6 +9,11 @@ const actors = [
   { name: "Савелий Виноградов", photo: "https://cdn.poehali.dev/projects/f49bde08-f9de-438a-b455-a2f7ec7f0f1f/bucket/8c2803cb-b8d3-4613-9d07-1a3ee5cebc06.jpg" },
   { name: "Златослава Сотникова", photo: "https://cdn.poehali.dev/projects/f49bde08-f9de-438a-b455-a2f7ec7f0f1f/bucket/7c0d2d54-f23b-4824-a269-0563119713e4.jpg" },
   { name: "Виктория Ярошева", photo: "https://cdn.poehali.dev/projects/f49bde08-f9de-438a-b455-a2f7ec7f0f1f/bucket/2535e815-b05e-48a4-a248-3549525d485c.jpg" },
+  { name: "Иван Богданов", photo: "https://cdn.poehali.dev/projects/f49bde08-f9de-438a-b455-a2f7ec7f0f1f/bucket/e5c6e72d-baca-478d-8a47-2b91888a8915.jpg" },
+  { name: "Антон Циков", photo: "https://cdn.poehali.dev/projects/f49bde08-f9de-438a-b455-a2f7ec7f0f1f/bucket/f4c887b9-fa9a-4e00-97e3-6bcc9be0ca55.jpg" },
+  { name: "Александра Ремеслова", photo: "https://cdn.poehali.dev/projects/f49bde08-f9de-438a-b455-a2f7ec7f0f1f/bucket/08d631f5-3882-48a8-9179-953a270e7780.jpg" },
+  { name: "Сусанна Топчян", photo: "https://cdn.poehali.dev/projects/f49bde08-f9de-438a-b455-a2f7ec7f0f1f/bucket/f5ddc7d1-f95b-474e-8b55-2fb6efeb07f5.jpg" },
+  { name: "Светлана Спускан", photo: "https://cdn.poehali.dev/projects/f49bde08-f9de-438a-b455-a2f7ec7f0f1f/bucket/da988cfe-eff7-411f-ade9-c60effa7a559.jpg" },
 ];
 
 export default function Promo() {
